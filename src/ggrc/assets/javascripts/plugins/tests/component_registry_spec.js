@@ -382,20 +382,5 @@ describe('GGRC component registry', function () {
         expect(control.scope.attr('hasValue')()).toBe('Hi');
       });
     });
-    describe('for @ variables', function () {
-      it('should get value from element', function () {
-        componentConfig.scope = {
-          hello: '@'
-        };
-        Components('fakeComponent', componentConfig);
-
-        template = can.view.mustache('<foo-bar hello="World" />');
-        frag = template();
-
-        frag = $(frag);
-        control = frag.find('foo-bar').control();
-        expect(control.scope.attr('hello')).toBe('World');
-      });
-    });
   });
 });

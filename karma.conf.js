@@ -19,8 +19,7 @@ module.exports = function (config) {
       'src/ggrc/static/dashboard-templates.js',
       'src/ggrc/static/dashboard.js',
       'src/ggrc/static/dashboard-spec-helpers.js',
-      // 'src/**/*_spec.js'
-      'src/ggrc/assets/javascripts/plugins/tests/component_registry_spec.js'
+      'src/**/*_spec.js'
     ],
 
     // list of files to exclude

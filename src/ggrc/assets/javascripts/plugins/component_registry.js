@@ -71,12 +71,6 @@
       scope = scope || {};
       parentScope = parentScope || {};
       element = element instanceof jQuery ? element : $(element);
-
-      _.each(originalScope, function (obj, key) {
-        if (originalScope[key] === '@') {
-          scope[key] = element.attr(can.camelCaseToDashCase(key));
-        }
-      });
       _.each(definitions, function (obj, key) {
         var prefix = '';
         if (obj.type === 'function') {
